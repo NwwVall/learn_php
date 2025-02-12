@@ -8,12 +8,14 @@
 </head>
 <body>
        
- <?php if (isset($_POST['sumbit'])) {
+ <?php
+if (isset($_POST['sumbit'])) {
 
             $gajiPerbulan = floatval($_POST['gaji']);
             $npwp = $_POST['npwp'];
             $gajiPertahun = $gajiPerbulan * 12;
             $potongPajak = 0;
+
             if ($gajiPertahun > 54000000) {
                 if ($npwp == "Ya") {
                     $potongPajak = $gajiPertahun * 0.15;
@@ -21,6 +23,7 @@
                     $potongPajak = $gajiPertahun * 0.20;
                 }
             }
+            
             $gajiBersihBulanan = ($gajiPertahun - $potongPajak) /12;
             $potongPajakPerbulan = $potongPajak /12;
             $gajiKotorPerbulan = $gajiPertahun /12;
