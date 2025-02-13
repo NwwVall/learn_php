@@ -8,7 +8,7 @@
 </head>
 
 <body>
- <form action="hasil.php" method="post">
+ <form action="end.php" method="post">
 
 <tr>
     <td>Nama karyawan</td>
@@ -50,7 +50,7 @@
         <td> </td>
         <td> </td>
         <td class="tombol">
-        <button type="submit" class="btn btn-outline-dark" name="sumbit">Sumbit</button>
+        <button type="submit" class="btn btn-outline-dark" name="submit">Submit</button>
         </td>
     </tr>
     </table>

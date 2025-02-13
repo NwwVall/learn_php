@@ -9,7 +9,7 @@
 <body>
        
  <?php
-if (isset($_POST['sumbit'])) {
+if (isset($_POST['submit'])) {
 
             $gajiPerbulan = floatval($_POST['gaji']);
             $npwp = $_POST['npwp'];
